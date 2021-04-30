@@ -1,0 +1,6 @@
+framework module Pods_MemoWidgetExtension {
+  umbrella header "Pods-MemoWidgetExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

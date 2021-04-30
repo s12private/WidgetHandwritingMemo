@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		872E585E2506A0450069C12A /* WidgetHandwritingMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E585D2506A0450069C12A /* WidgetHandwritingMemoApp.swift */; };
+		872E58602506A0450069C12A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E585F2506A0450069C12A /* ContentView.swift */; };
+		872E58622506A0480069C12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872E58612506A0480069C12A /* Assets.xcassets */; };
+		872E58652506A0480069C12A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872E58642506A0480069C12A /* Preview Assets.xcassets */; };
+		872E586D2506A09F0069C12A /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E586C2506A09F0069C12A /* CanvasView.swift */; };
+		872E586F2506A0B90069C12A /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E586E2506A0B90069C12A /* ColorEx.swift */; };
+		872E58712506A0CD0069C12A /* MemoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58702506A0CD0069C12A /* MemoManager.swift */; };
+		872E58732506A0D80069C12A /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58722506A0D80069C12A /* Memo.swift */; };
+		872E58752506A0EF0069C12A /* UIImageEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58742506A0EF0069C12A /* UIImageEx.swift */; };
+		873F35F225096F330068AA7B /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F35F125096F330068AA7B /* ImageManager.swift */; };
+		87B2FE6525179AB2007EC46E /* MemoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 87B2FE6925179AB2007EC46E /* MemoWidget.intentdefinition */; };
+		87B2FE6625179AB2007EC46E /* MemoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 87B2FE6925179AB2007EC46E /* MemoWidget.intentdefinition */; };
+		87B2FE6725179AB2007EC46E /* MemoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 87B2FE6925179AB2007EC46E /* MemoWidget.intentdefinition */; };
+		87E0E6C2250793F600923572 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E0E6C1250793F600923572 /* MemoListView.swift */; };
+		87E6703C251291EE0061C56D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8782958625096AFA00D52344 /* WidgetKit.framework */; };
+		87E6703D251291EE0061C56D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8782958825096AFA00D52344 /* SwiftUI.framework */; };
+		87E67040251291EE0061C56D /* MemoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6703F251291EE0061C56D /* MemoWidget.swift */; };
+		87E67043251291F00061C56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E67042251291F00061C56D /* Assets.xcassets */; };
+		87E67049251291F00061C56D /* MemoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87E6703B251291EE0061C56D /* MemoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87E6705E251293490061C56D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E6705D251293490061C56D /* IntentHandler.swift */; };
+		87E67062251293490061C56D /* MemoIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87E6705B251293490061C56D /* MemoIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		87E670732512943F0061C56D /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F35F125096F330068AA7B /* ImageManager.swift */; };
+		87E67077251294460061C56D /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F35F125096F330068AA7B /* ImageManager.swift */; };
+		87E670842512A4ED0061C56D /* MemoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58702506A0CD0069C12A /* MemoManager.swift */; };
+		87E670882512A4EF0061C56D /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58722506A0D80069C12A /* Memo.swift */; };
+		87E6708C2512A59E0061C56D /* UIImageEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E58742506A0EF0069C12A /* UIImageEx.swift */; };
+		87E670902512A5B60061C56D /* ColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E586E2506A0B90069C12A /* ColorEx.swift */; };
+		BE6EFF13173068A6BB16AAC9 /* Pods_WidgetHandwritingMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8C669723B525A029243984 /* Pods_WidgetHandwritingMemo.framework */; };
+		CC704990C82873D95A8DC3F7 /* Pods_MemoWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FDC20DF36E2C310752FC63 /* Pods_MemoWidgetExtension.framework */; };
+		F7C11D77A40B2C7BE5BD20CD /* Pods_MemoIntentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63DFD89A95202491939BFFC /* Pods_MemoIntentExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87E67047251291F00061C56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 872E58522506A0450069C12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E6703A251291EE0061C56D;
+			remoteInfo = MemoWidgetExtension;
+		};
+		87E67060251293490061C56D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 872E58522506A0450069C12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E6705A251293490061C56D;
+			remoteInfo = MemoIntentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8782959325096AFD00D52344 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87E67062251293490061C56D /* MemoIntentExtension.appex in Embed App Extensions */,
+				87E67049251291F00061C56D /* MemoWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00FDC20DF36E2C310752FC63 /* Pods_MemoWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1313AA3E6048F19895536CDC /* Pods-MemoIntentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoIntentExtension.debug.xcconfig"; path = "Target Support Files/Pods-MemoIntentExtension/Pods-MemoIntentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1D7C2B216D457C7E5B943E0C /* Pods-WidgetHandwritingMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetHandwritingMemo.debug.xcconfig"; path = "Target Support Files/Pods-WidgetHandwritingMemo/Pods-WidgetHandwritingMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2E958FD215414C5385DD9048 /* Pods-WidgetHandwritingMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WidgetHandwritingMemo.release.xcconfig"; path = "Target Support Files/Pods-WidgetHandwritingMemo/Pods-WidgetHandwritingMemo.release.xcconfig"; sourceTree = "<group>"; };
+		340BB7CF8C9E5EF43B7DA9F6 /* Pods-MemoIntentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoIntentExtension.release.xcconfig"; path = "Target Support Files/Pods-MemoIntentExtension/Pods-MemoIntentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4431221E13512163831A10FC /* Pods-MemoWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-MemoWidgetExtension/Pods-MemoWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		872E585A2506A0450069C12A /* WidgetHandwritingMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetHandwritingMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		872E585D2506A0450069C12A /* WidgetHandwritingMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetHandwritingMemoApp.swift; sourceTree = "<group>"; };
+		872E585F2506A0450069C12A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		872E58612506A0480069C12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		872E58642506A0480069C12A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		872E58662506A0480069C12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		872E586C2506A09F0069C12A /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		872E586E2506A0B90069C12A /* ColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEx.swift; sourceTree = "<group>"; };
+		872E58702506A0CD0069C12A /* MemoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoManager.swift; sourceTree = "<group>"; };
+		872E58722506A0D80069C12A /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		872E58742506A0EF0069C12A /* UIImageEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageEx.swift; sourceTree = "<group>"; };
+		872E58762506A8700069C12A /* WidgetHandwritingMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetHandwritingMemo.entitlements; sourceTree = "<group>"; };
+		873F35EC25096B270068AA7B /* MemoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoWidgetExtension.entitlements; sourceTree = "<group>"; };
+		873F35F125096F330068AA7B /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		8782958625096AFA00D52344 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8782958825096AFA00D52344 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		87B2FE6825179AB2007EC46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/MemoWidget.intentdefinition; sourceTree = "<group>"; };
+		87B2FE7F2517AB16007EC46E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MemoWidget.strings; sourceTree = "<group>"; };
+		87E0E6C1250793F600923572 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		87E6703B251291EE0061C56D /* MemoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MemoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E6703F251291EE0061C56D /* MemoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWidget.swift; sourceTree = "<group>"; };
+		87E67042251291F00061C56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87E67044251291F00061C56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E6705B251293490061C56D /* MemoIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MemoIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E6705D251293490061C56D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		87E6705F251293490061C56D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E6707E251297BF0061C56D /* MemoIntentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoIntentExtension.entitlements; sourceTree = "<group>"; };
+		C63DFD89A95202491939BFFC /* Pods_MemoIntentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoIntentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F3C14E5313687E5B0E61C8 /* Pods-MemoWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MemoWidgetExtension/Pods-MemoWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		FF8C669723B525A029243984 /* Pods_WidgetHandwritingMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WidgetHandwritingMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		872E58572506A0450069C12A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6EFF13173068A6BB16AAC9 /* Pods_WidgetHandwritingMemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67038251291EE0061C56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E6703D251291EE0061C56D /* SwiftUI.framework in Frameworks */,
+				87E6703C251291EE0061C56D /* WidgetKit.framework in Frameworks */,
+				CC704990C82873D95A8DC3F7 /* Pods_MemoWidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67058251293490061C56D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7C11D77A40B2C7BE5BD20CD /* Pods_MemoIntentExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		872E58512506A0450069C12A = {
+			isa = PBXGroup;
+			children = (
+				873F35EC25096B270068AA7B /* MemoWidgetExtension.entitlements */,
+				872E585C2506A0450069C12A /* WidgetHandwritingMemo */,
+				87E6703E251291EE0061C56D /* MemoWidget */,
+				87E6705C251293490061C56D /* MemoIntentExtension */,
+				8782958525096AFA00D52344 /* Frameworks */,
+				872E585B2506A0450069C12A /* Products */,
+				A4280831284CC94A6B604662 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		872E585B2506A0450069C12A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				872E585A2506A0450069C12A /* WidgetHandwritingMemo.app */,
+				87E6703B251291EE0061C56D /* MemoWidgetExtension.appex */,
+				87E6705B251293490061C56D /* MemoIntentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		872E585C2506A0450069C12A /* WidgetHandwritingMemo */ = {
+			isa = PBXGroup;
+			children = (
+				872E58762506A8700069C12A /* WidgetHandwritingMemo.entitlements */,
+				872E585D2506A0450069C12A /* WidgetHandwritingMemoApp.swift */,
+				872E585F2506A0450069C12A /* ContentView.swift */,
+				872E586C2506A09F0069C12A /* CanvasView.swift */,
+				87E0E6C1250793F600923572 /* MemoListView.swift */,
+				872E586E2506A0B90069C12A /* ColorEx.swift */,
+				873F35F125096F330068AA7B /* ImageManager.swift */,
+				872E58702506A0CD0069C12A /* MemoManager.swift */,
+				872E58722506A0D80069C12A /* Memo.swift */,
+				872E58742506A0EF0069C12A /* UIImageEx.swift */,
+				872E58612506A0480069C12A /* Assets.xcassets */,
+				872E58662506A0480069C12A /* Info.plist */,
+				87B2FE6925179AB2007EC46E /* MemoWidget.intentdefinition */,
+				872E58632506A0480069C12A /* Preview Content */,
+			);
+			path = WidgetHandwritingMemo;
+			sourceTree = "<group>";
+		};
+		872E58632506A0480069C12A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				872E58642506A0480069C12A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8782958525096AFA00D52344 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8782958625096AFA00D52344 /* WidgetKit.framework */,
+				8782958825096AFA00D52344 /* SwiftUI.framework */,
+				C63DFD89A95202491939BFFC /* Pods_MemoIntentExtension.framework */,
+				00FDC20DF36E2C310752FC63 /* Pods_MemoWidgetExtension.framework */,
+				FF8C669723B525A029243984 /* Pods_WidgetHandwritingMemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87E6703E251291EE0061C56D /* MemoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				87E6703F251291EE0061C56D /* MemoWidget.swift */,
+				87E67042251291F00061C56D /* Assets.xcassets */,
+				87E67044251291F00061C56D /* Info.plist */,
+			);
+			path = MemoWidget;
+			sourceTree = "<group>";
+		};
+		87E6705C251293490061C56D /* MemoIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				87E6707E251297BF0061C56D /* MemoIntentExtension.entitlements */,
+				87E6705D251293490061C56D /* IntentHandler.swift */,
+				87E6705F251293490061C56D /* Info.plist */,
+			);
+			path = MemoIntentExtension;
+			sourceTree = "<group>";
+		};
+		A4280831284CC94A6B604662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1313AA3E6048F19895536CDC /* Pods-MemoIntentExtension.debug.xcconfig */,
+				340BB7CF8C9E5EF43B7DA9F6 /* Pods-MemoIntentExtension.release.xcconfig */,
+				E7F3C14E5313687E5B0E61C8 /* Pods-MemoWidgetExtension.debug.xcconfig */,
+				4431221E13512163831A10FC /* Pods-MemoWidgetExtension.release.xcconfig */,
+				1D7C2B216D457C7E5B943E0C /* Pods-WidgetHandwritingMemo.debug.xcconfig */,
+				2E958FD215414C5385DD9048 /* Pods-WidgetHandwritingMemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		872E58592506A0450069C12A /* WidgetHandwritingMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872E58692506A0480069C12A /* Build configuration list for PBXNativeTarget "WidgetHandwritingMemo" */;
+			buildPhases = (
+				2BD59DC97FC3C31A81FA60AE /* [CP] Check Pods Manifest.lock */,
+				872E58562506A0450069C12A /* Sources */,
+				872E58572506A0450069C12A /* Frameworks */,
+				872E58582506A0450069C12A /* Resources */,
+				8782959325096AFD00D52344 /* Embed App Extensions */,
+				AD85F3F5047D8350E4E2E533 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E67048251291F00061C56D /* PBXTargetDependency */,
+				87E67061251293490061C56D /* PBXTargetDependency */,
+			);
+			name = WidgetHandwritingMemo;
+			productName = WidgetHandwritingMemo;
+			productReference = 872E585A2506A0450069C12A /* WidgetHandwritingMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87E6703A251291EE0061C56D /* MemoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E6704A251291F00061C56D /* Build configuration list for PBXNativeTarget "MemoWidgetExtension" */;
+			buildPhases = (
+				1CF09E35AC6DD2D5BD9CB94E /* [CP] Check Pods Manifest.lock */,
+				87E67037251291EE0061C56D /* Sources */,
+				87E67038251291EE0061C56D /* Frameworks */,
+				87E67039251291EE0061C56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoWidgetExtension;
+			productName = MemoWidgetExtension;
+			productReference = 87E6703B251291EE0061C56D /* MemoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		87E6705A251293490061C56D /* MemoIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E67063251293490061C56D /* Build configuration list for PBXNativeTarget "MemoIntentExtension" */;
+			buildPhases = (
+				29716C96FB5965731EAE98C4 /* [CP] Check Pods Manifest.lock */,
+				87E67057251293490061C56D /* Sources */,
+				87E67058251293490061C56D /* Frameworks */,
+				87E67059251293490061C56D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoIntentExtension;
+			productName = MemoIntentExtension;
+			productReference = 87E6705B251293490061C56D /* MemoIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		872E58522506A0450069C12A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					872E58592506A0450069C12A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					87E6703A251291EE0061C56D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					87E6705A251293490061C56D = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 872E58552506A0450069C12A /* Build configuration list for PBXProject "WidgetHandwritingMemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 872E58512506A0450069C12A;
+			productRefGroup = 872E585B2506A0450069C12A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				872E58592506A0450069C12A /* WidgetHandwritingMemo */,
+				87E6703A251291EE0061C56D /* MemoWidgetExtension */,
+				87E6705A251293490061C56D /* MemoIntentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		872E58582506A0450069C12A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872E58652506A0480069C12A /* Preview Assets.xcassets in Resources */,
+				872E58622506A0480069C12A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67039251291EE0061C56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E67043251291F00061C56D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67059251293490061C56D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CF09E35AC6DD2D5BD9CB94E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29716C96FB5965731EAE98C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoIntentExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BD59DC97FC3C31A81FA60AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WidgetHandwritingMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD85F3F5047D8350E4E2E533 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WidgetHandwritingMemo/Pods-WidgetHandwritingMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WidgetHandwritingMemo/Pods-WidgetHandwritingMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WidgetHandwritingMemo/Pods-WidgetHandwritingMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		872E58562506A0450069C12A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B2FE6525179AB2007EC46E /* MemoWidget.intentdefinition in Sources */,
+				872E586F2506A0B90069C12A /* ColorEx.swift in Sources */,
+				872E58602506A0450069C12A /* ContentView.swift in Sources */,
+				87E0E6C2250793F600923572 /* MemoListView.swift in Sources */,
+				873F35F225096F330068AA7B /* ImageManager.swift in Sources */,
+				872E585E2506A0450069C12A /* WidgetHandwritingMemoApp.swift in Sources */,
+				872E58752506A0EF0069C12A /* UIImageEx.swift in Sources */,
+				872E58732506A0D80069C12A /* Memo.swift in Sources */,
+				872E586D2506A09F0069C12A /* CanvasView.swift in Sources */,
+				872E58712506A0CD0069C12A /* MemoManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67037251291EE0061C56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E67077251294460061C56D /* ImageManager.swift in Sources */,
+				87B2FE6625179AB2007EC46E /* MemoWidget.intentdefinition in Sources */,
+				87E67040251291EE0061C56D /* MemoWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E67057251293490061C56D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E670732512943F0061C56D /* ImageManager.swift in Sources */,
+				87E670902512A5B60061C56D /* ColorEx.swift in Sources */,
+				87E670842512A4ED0061C56D /* MemoManager.swift in Sources */,
+				87E6708C2512A59E0061C56D /* UIImageEx.swift in Sources */,
+				87B2FE6725179AB2007EC46E /* MemoWidget.intentdefinition in Sources */,
+				87E6705E251293490061C56D /* IntentHandler.swift in Sources */,
+				87E670882512A4EF0061C56D /* Memo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E67048251291F00061C56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E6703A251291EE0061C56D /* MemoWidgetExtension */;
+			targetProxy = 87E67047251291F00061C56D /* PBXContainerItemProxy */;
+		};
+		87E67061251293490061C56D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E6705A251293490061C56D /* MemoIntentExtension */;
+			targetProxy = 87E67060251293490061C56D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87B2FE6925179AB2007EC46E /* MemoWidget.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87B2FE6825179AB2007EC46E /* Base */,
+				87B2FE7F2517AB16007EC46E /* en */,
+			);
+			name = MemoWidget.intentdefinition;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		872E58672506A0480069C12A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		872E58682506A0480069C12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		872E586A2506A0480069C12A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7C2B216D457C7E5B943E0C /* Pods-WidgetHandwritingMemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetHandwritingMemo/WidgetHandwritingMemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.4.2;
+				DEVELOPMENT_ASSET_PATHS = "\"WidgetHandwritingMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WidgetHandwritingMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		872E586B2506A0480069C12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E958FD215414C5385DD9048 /* Pods-WidgetHandwritingMemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WidgetHandwritingMemo/WidgetHandwritingMemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.4.2;
+				DEVELOPMENT_ASSET_PATHS = "\"WidgetHandwritingMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WidgetHandwritingMemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87E6704B251291F00061C56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F3C14E5313687E5B0E61C8 /* Pods-MemoWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MemoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				INFOPLIST_FILE = MemoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo.MemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87E6704C251291F00061C56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4431221E13512163831A10FC /* Pods-MemoWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MemoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				INFOPLIST_FILE = MemoWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo.MemoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87E67064251293490061C56D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1313AA3E6048F19895536CDC /* Pods-MemoIntentExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MemoIntentExtension/MemoIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				INFOPLIST_FILE = MemoIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo.MemoIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87E67065251293490061C56D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340BB7CF8C9E5EF43B7DA9F6 /* Pods-MemoIntentExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MemoIntentExtension/MemoIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JNMUP4HWZT;
+				INFOPLIST_FILE = MemoIntentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shigeki.work.WidgetHandwritingMemo.MemoIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		872E58552506A0450069C12A /* Build configuration list for PBXProject "WidgetHandwritingMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872E58672506A0480069C12A /* Debug */,
+				872E58682506A0480069C12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872E58692506A0480069C12A /* Build configuration list for PBXNativeTarget "WidgetHandwritingMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872E586A2506A0480069C12A /* Debug */,
+				872E586B2506A0480069C12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E6704A251291F00061C56D /* Build configuration list for PBXNativeTarget "MemoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E6704B251291F00061C56D /* Debug */,
+				87E6704C251291F00061C56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E67063251293490061C56D /* Build configuration list for PBXNativeTarget "MemoIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E67064251293490061C56D /* Debug */,
+				87E67065251293490061C56D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 872E58522506A0450069C12A /* Project object */;
+}

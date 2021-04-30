@@ -1,0 +1,6 @@
+framework module Pods_MemoIntentExtension {
+  umbrella header "Pods-MemoIntentExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
